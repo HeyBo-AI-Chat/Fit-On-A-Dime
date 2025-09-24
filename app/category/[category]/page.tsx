@@ -208,7 +208,9 @@ export default function CategoryPage({ params }: { params: { category: string } 
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-2 border border-input rounded-md bg-background"
               />
-              <Button>Subscribe</Button>
+              <Link href="/subscribe">
+                <Button>Subscribe</Button>
+              </Link>
             </div>
           </div>
         </div>

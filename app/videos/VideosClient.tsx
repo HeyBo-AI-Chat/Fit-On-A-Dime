@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Play, Clock, User } from "lucide-react"
+import Link from "next/link"
 
 const workoutVideos = [
   {
@@ -213,7 +214,9 @@ export default function VideosClient() {
                 Subscribe to our newsletter to get notified when we release new workout videos, equipment reviews, and
                 budget fitness tips.
               </p>
-              <Button size="lg">Subscribe for Free Updates</Button>
+              <Link href="/subscribe">
+                <Button size="lg">Subscribe for Free Updates</Button>
+              </Link>
             </Card>
           </div>
         </div>

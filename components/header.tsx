@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, Search, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,10 +14,8 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">F</span>
-              </div>
+            <Link href="/" className="flex items-center space-x-3">
+              <Image src="/fit-logo.png" alt="Fit on a Dime Logo" width={40} height={40} className="rounded-full" />
               <span className="text-xl font-bold text-foreground">Fit on a Dime</span>
             </Link>
           </div>

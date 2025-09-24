@@ -185,7 +185,9 @@ export function BlogSection() {
                       placeholder="Enter your email"
                       className="w-full px-3 py-2 border border-input rounded-md bg-background text-sm"
                     />
-                    <Button className="w-full">Subscribe Free</Button>
+                    <Link href="/subscribe">
+                      <Button className="w-full">Subscribe Free</Button>
+                    </Link>
                   </div>
                   <p className="text-xs text-muted-foreground mt-2">
                     No spam, unsubscribe anytime. Powered by Mailchimp.

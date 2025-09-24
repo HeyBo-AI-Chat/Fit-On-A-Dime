@@ -1381,7 +1381,9 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 Get more budget fitness tips and exclusive deals delivered to your inbox.
               </p>
               <div className="flex gap-4">
-                <Button>Subscribe to Newsletter</Button>
+                <Link href="/subscribe">
+                  <Button>Subscribe to Newsletter</Button>
+                </Link>
                 <Button variant="outline">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Share Article
