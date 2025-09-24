@@ -5,78 +5,77 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Play, Clock, User } from "lucide-react"
 
-// <CHANGE> Updated with working YouTube videos for fitness content
 const workoutVideos = [
   {
     id: 1,
-    title: "15-Minute HIIT Workout - No Equipment",
+    title: "30-Minute HIIT Workout - No Equipment",
     description:
       "High-intensity interval training that burns calories and builds strength using only bodyweight exercises.",
-    duration: "15 min",
+    duration: "30 min",
     difficulty: "Beginner",
     category: "HIIT",
     thumbnail: "/person-doing-hiit-workout-jumping-jacks-burpees.jpg",
-    videoUrl: "https://www.youtube.com/embed/ml6cT4AZdqI", // Calisthenic Movement - 15 Min HIIT
-    instructor: "Mike Chen",
+    videoUrl: "https://www.youtube.com/embed/ml6cT4AZdqI", // Calisthenic Movement - 30 Min HIIT
+    instructor: "Calisthenic Movement",
   },
   {
     id: 2,
-    title: "Full Body Strength with Resistance Bands",
-    description: "Complete strength training routine using affordable resistance bands to target every muscle group.",
+    title: "Full Body Resistance Band Workout",
+    description: "Complete strength training routine using resistance bands to target every muscle group.",
     duration: "25 min",
     difficulty: "Intermediate",
     category: "Strength",
     thumbnail: "/resistance-bands-workout-demonstration.jpg",
     videoUrl: "https://www.youtube.com/embed/1Jb0_Hj-8Qc", // Athlean-X - Resistance Band Workout
-    instructor: "Sarah Johnson",
+    instructor: "Athlean-X",
   },
   {
     id: 3,
-    title: "Yoga Flow for Flexibility",
-    description: "Gentle yoga sequence to improve flexibility and reduce stress, perfect for recovery days.",
+    title: "20 Minute Morning Yoga Flow",
+    description: "Energizing yoga sequence to start your day with flexibility and mindfulness.",
     duration: "20 min",
     difficulty: "Beginner",
     category: "Yoga",
     thumbnail: "/yoga-flow-demonstration-poses.jpg",
     videoUrl: "https://www.youtube.com/embed/v7AYKMP6rOE", // Yoga with Adriene - 20 Min Flow
-    instructor: "Lisa Park",
+    instructor: "Yoga with Adriene",
   },
   {
     id: 4,
-    title: "Dumbbell Workout for Small Spaces",
-    description: "Effective strength training using just one pair of dumbbells in a 6x6 foot space.",
+    title: "30 Min Full Body Dumbbell Workout",
+    description: "Effective strength training using dumbbells for all major muscle groups.",
     duration: "30 min",
     difficulty: "Intermediate",
     category: "Strength",
     thumbnail: "/dumbbell-workout-small-space.jpg",
     videoUrl: "https://www.youtube.com/embed/2pLT-olgUJs", // FitnessBlender - Dumbbell Workout
-    instructor: "David Wilson",
+    instructor: "FitnessBlender",
   },
   {
     id: 5,
-    title: "Core Blast - 10 Minutes",
-    description: "Quick but effective core workout that targets abs, obliques, and lower back muscles.",
+    title: "10 Min Intense Ab Workout",
+    description: "Quick but effective core workout that targets abs and strengthens your entire core.",
     duration: "10 min",
     difficulty: "Beginner",
     category: "Core",
     thumbnail: "/core-workout-plank-variations.jpg",
     videoUrl: "https://www.youtube.com/embed/DHD1-2P94DI", // Pamela Reif - 10 Min Ab Workout
-    instructor: "Emma Davis",
+    instructor: "Pamela Reif",
   },
   {
     id: 6,
-    title: "Cardio Dance Party",
-    description: "Fun, high-energy dance workout that burns calories while you have a blast moving to the music.",
-    duration: "35 min",
+    title: "30 Min Dance Cardio Workout",
+    description: "Fun, high-energy dance workout that burns calories while you move to upbeat music.",
+    duration: "30 min",
     difficulty: "All Levels",
     category: "Cardio",
     thumbnail: "/dance-cardio-workout-fun.jpg",
     videoUrl: "https://www.youtube.com/embed/gC_L9qAHVJ8", // POPSUGAR Fitness - Dance Cardio
-    instructor: "Rachel Green",
+    instructor: "POPSUGAR Fitness",
   },
   {
     id: 7,
-    title: "Beginner Bodyweight Strength",
+    title: "Beginner Bodyweight Strength Training",
     description:
       "Perfect introduction to strength training using only your body weight. Build a foundation for fitness.",
     duration: "20 min",
@@ -84,18 +83,18 @@ const workoutVideos = [
     category: "Strength",
     thumbnail: "/beginner-bodyweight-exercises.jpg",
     videoUrl: "https://www.youtube.com/embed/IODxDxX7oi4", // FitnessBlender - Beginner Bodyweight
-    instructor: "Mike Chen",
+    instructor: "FitnessBlender",
   },
   {
     id: 8,
-    title: "Stretching for Better Sleep",
-    description: "Gentle stretching routine to help you unwind and prepare your body for restful sleep.",
+    title: "Bedtime Yoga for Better Sleep",
+    description: "Gentle stretching and yoga routine to help you unwind and prepare for restful sleep.",
     duration: "12 min",
     difficulty: "Beginner",
     category: "Yoga",
     thumbnail: "/bedtime-stretching-routine.jpg",
     videoUrl: "https://www.youtube.com/embed/BiWnaZ2nAD4", // Yoga with Adriene - Bedtime Yoga
-    instructor: "Lisa Park",
+    instructor: "Yoga with Adriene",
   },
 ]
 
@@ -117,10 +116,9 @@ export default function VideosClient() {
           <div className="mb-12">
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
-                {/* <CHANGE> Added working YouTube embed for featured video */}
                 <iframe
                   src="https://www.youtube.com/embed/ml6cT4AZdqI"
-                  title="15-Minute HIIT Workout - No Equipment"
+                  title="30-Minute HIIT Workout - No Equipment"
                   className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -132,13 +130,13 @@ export default function VideosClient() {
                   <Badge variant="secondary">Beginner</Badge>
                   <Badge variant="secondary" className="bg-black/10">
                     <Clock className="h-3 w-3 mr-1" />
-                    15 min
+                    30 min
                   </Badge>
                 </div>
-                <h3 className="text-2xl font-semibold mb-2">Featured: 15-Minute HIIT Workout</h3>
+                <h3 className="text-2xl font-semibold mb-2">Featured: 30-Minute HIIT Workout</h3>
                 <p className="text-muted-foreground">
-                  Perfect for busy schedules - maximum results in minimum time. This high-intensity workout burns
-                  calories and builds strength using only bodyweight exercises.
+                  Perfect for those ready for a challenge - maximum results with this comprehensive high-intensity
+                  workout that burns calories and builds strength using only bodyweight exercises.
                 </p>
               </CardContent>
             </Card>
@@ -157,7 +155,6 @@ export default function VideosClient() {
                     alt={video.title}
                     className="w-full h-full object-cover"
                   />
-                  {/* <CHANGE> Added click handler to open video in modal or new tab */}
                   <div
                     className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity cursor-pointer"
                     onClick={() => window.open(video.videoUrl.replace("/embed/", "/watch?v="), "_blank")}
